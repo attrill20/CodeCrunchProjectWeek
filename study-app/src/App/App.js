@@ -26,6 +26,7 @@ function App() {
 const [content, setContent] = useState([]) // should this be a string?
   
 function handleClick(event) {
+  console.log('is this working?');
   setContent(event.target.value);
   console.log(event.target.value);
 }
@@ -37,7 +38,7 @@ function handleClick(event) {
       {/* we need to pass a function into this button:  */}
       <DropDown 
         // setSelectedOption = {setSelectedOption}
-        handleChange = {handleClick}
+        handleClick = {handleClick}
         setContent = {setContent}
       />
       {/* We need to set our 'list' state to our dummyArray
