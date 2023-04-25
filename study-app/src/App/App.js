@@ -17,20 +17,18 @@ import DropDown from '../DropDown/DropDown';
 // create a function that will take in the data from the dropdown menu and display it to the list
 
 
-const dummyArray = ['React', 'JS', 'HTML', 'CSS']
+const dummyArray = {React: [{id: 1, title: "Master React", url: "link", description: "...."}], HTML: [{id:1, title: "using html"}]};
 
 
 function App() {
-// const [options, setOptions] = useState['React', 'JS', 'HTML', 'CSS']
-// const [selectedOption, setSelectedOption] = useState[null];
-const [content, setContent] = useState([]) // should this be a string?
+const [content, setContent] = useState(dummyArray);
+const [search, setSearch] = useState('') // should this be a string?
   
 function handleClick(event) {
   console.log('is this working?');
-  setContent(event.target.value);
-  console.log(event.target.value);
+  setSearch(event.target.innerText)
+  console.log(event.target.innerText);
 }
-
 
   return (
     <div>
@@ -39,12 +37,12 @@ function handleClick(event) {
       <DropDown 
         // setSelectedOption = {setSelectedOption}
         handleClick = {handleClick}
-        setContent = {setContent}
+        setSearch = {setSearch}
       />
       {/* We need to set our 'list' state to our dummyArray
       then we need to pass this state into a <ul> on our list */}
       <List 
-      content = {content}
+      content = {content[search]}
       />
       <ListItem />
     </div>

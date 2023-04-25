@@ -9,10 +9,9 @@ export default function DropDown(props) {
   </button>
   <ul className="dropdown-menu">
     <li onClick={props.handleClick}><a className="dropdown-item" href="#"> React </a></li>
-    <li><a className="dropdown-item" href="#">JS</a></li>
-    <li><a className="dropdown-item" href="#">HTML</a></li>
-    <li><hr className="dropdown-divider" /></li>
-    <li><a className="dropdown-item" href="#">CSS</a></li>
+    <li onClick={props.handleClick}><a className="dropdown-item" href="#">JS</a></li>
+    <li onClick={props.handleClick}><a className="dropdown-item" href="#">HTML</a></li>
+    <li onClick={props.handleClick}><a className="dropdown-item" href="#">CSS</a></li>
   </ul>
 </div>
   )

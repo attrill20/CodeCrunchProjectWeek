@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
 
-function List() {
+function List(props) {
+  console.log(props)
   return (
     <div className="List">
 
-      <p> List Test </p>
+      <p> {props.content && props.content[0].title} </p>
        
     </div>
   );
