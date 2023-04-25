@@ -2,20 +2,16 @@ import React from 'react'
 
 export default function DropDown() {
   return (
-   <div class="dropdown">
-  <button
-    class="btn btn-primary dropdown-toggle"
-    type="button"
-    id="dropdownMenuButton"
-    data-mdb-toggle="dropdown"
-    aria-expanded="false"
-  >
-    Dropdown button
+<div class="btn-group">
+  <button type="button" class="btn btn-dark dropdown-toggle" data-mdb-toggle="dropdown" aria-expanded="false">
+    Choose a study topic
   </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">React</a></li>
+    <li><a class="dropdown-item" href="#">JS</a></li>
+    <li><a class="dropdown-item" href="#">HTML</a></li>
+    <li><hr class="dropdown-divider" /></li>
+    <li><a class="dropdown-item" href="#">CSS</a></li>
   </ul>
 </div>
   )
