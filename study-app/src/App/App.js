@@ -14,17 +14,21 @@ import DropDown from '../DropDown/DropDown';
 // check that dropdown menu displays data to the list 
 // chanage the type of data being displayed so it is similar to our actual data
 
-const dummyArray = ['one', 'two']
-// const dummyArray2 = ['three', 'four']
+// create a function that will take in the data from the dropdown menu and display it to the list
+
+
+const dummyArray = ['one', 'two', 'three', 'four']
 
 
 function App() {
-const [list, setList] = useState([])
+const [list, setList] = useState([]) // should this be a string?
   
-function functionName() {
-  setList([...dummyArray]);
-  console.log(list)
+const functionName = (event) => {
+  setList(event.target.value);
+  console.log(event.target.value);
 }
+
+
   return (
     <div>
       <h1>Test</h1>
@@ -32,18 +36,15 @@ function functionName() {
       <DropDown 
         functionName = {functionName}
         list = {list}
+        setList = {setList}
       />
       {/* We need to set our 'list' state to our dummyArray
-      then we need to pass this state into a <ul>our list on  */}
+      then we need to pass this state into a <ul> on our list */}
       <List />
       <ListItem />
     </div>
 
   );
 }
-
-
-
-
 
 export default App;
