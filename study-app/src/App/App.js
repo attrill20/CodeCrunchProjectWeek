@@ -17,14 +17,16 @@ import DropDown from '../DropDown/DropDown';
 // create a function that will take in the data from the dropdown menu and display it to the list
 
 
-const dummyArray = ['one', 'two', 'three', 'four']
+const dummyArray = ['React', 'JS', 'HTML', 'CSS']
 
 
 function App() {
-const [list, setList] = useState([]) // should this be a string?
+// const [options, setOptions] = useState['React', 'JS', 'HTML', 'CSS']
+// const [selectedOption, setSelectedOption] = useState[null];
+const [content, setContent] = useState([]) // should this be a string?
   
-const functionName = (event) => {
-  setList(event.target.value);
+function handleClick(event) {
+  setContent(event.target.value);
   console.log(event.target.value);
 }
 
@@ -34,13 +36,15 @@ const functionName = (event) => {
       <h1>Test</h1>
       {/* we need to pass a function into this button:  */}
       <DropDown 
-        functionName = {functionName}
-        list = {list}
-        setList = {setList}
+        // setSelectedOption = {setSelectedOption}
+        handleChange = {handleClick}
+        setContent = {setContent}
       />
       {/* We need to set our 'list' state to our dummyArray
       then we need to pass this state into a <ul> on our list */}
-      <List />
+      <List 
+      content = {content}
+      />
       <ListItem />
     </div>
 
