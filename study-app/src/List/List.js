@@ -1,18 +1,20 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-function List(props) {
-  console.log(props)
+function ListItem(props) {
+  const { item } = props;
+
+  if (!item) {
+    return null;
+  }
+
   return (
-    <div className="List">
-
-      <p> {props.content && props.content[0].title} </p>
-      <p> {props.content && props.content[0].docUrl} </p>
-      <p> {props.content && props.content[0].youtubeUrl} </p>
-      <p> {props.content && props.content[0].quizUrl} </p>
-
-       
+    <div>
+      <h2>{item.title}</h2>
+      <p>YouTube URL: {item.youtubeUrl}</p>
+      <p>Documentation URL: {item.docUrl}</p>
+      <p>Quiz URL: {item.quizUrl}</p>
     </div>
   );
 }
 
-export default List;
+export default ListItem;

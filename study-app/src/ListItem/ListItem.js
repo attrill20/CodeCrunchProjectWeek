@@ -1,13 +1,21 @@
-import React, {useState} from 'react';
+function ListItem(props) {
+  const { title = '', youtubeUrl, docUrl, quizUrl } = props.item;
 
-function ListItem () {
   return (
-    <div className="List">
-
-        <p> ListItem Test</p>
-       
+    <div>
+      <h2>{title}</h2>
+      <ul>
+        <li>
+          <a href={youtubeUrl}>Watch on YouTube</a>
+        </li>
+        <li>
+          <a href={docUrl}>Read the documentation</a>
+        </li>
+        <li>
+          <a href={quizUrl}>Take the quiz</a>
+        </li>
+      </ul>
     </div>
   );
 }
-
 export default ListItem;
