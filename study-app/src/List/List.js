@@ -6,6 +6,10 @@ function List(props) {
     <div className="List">
 
       <p> {props.content && props.content[0].title} </p>
+      <p> {props.content && props.content[0].docUrl} </p>
+      <p> {props.content && props.content[0].youtubeUrl} </p>
+      <p> {props.content && props.content[0].quizUrl} </p>
+
        
     </div>
   );

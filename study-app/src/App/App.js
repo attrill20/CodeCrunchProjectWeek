@@ -17,8 +17,20 @@ import DropDown from '../DropDown/DropDown';
 // create a function that will take in the data from the dropdown menu and display it to the list
 
 
-const dummyArray = {React: [{id: 1, title: "Master React", url: "link", description: "...."}], HTML: [{id:1, title: "using html"}]};
+const dummyArray = {
+React: [{title: "Master React", youtubeUrl: "link", docUrl: "....", quizUrl: ""}], 
+Components: [{youtubeUrl: "https://www.youtube.com/watch?v=9vS86xgG3ak&t=12s", 
+  docUrl:"https://stackabuse.com/guide-to-react-component/", 
+  quizUrl:"https://quizgecko.com/quiz/test-your-react-component-knowledge",}], 
 
+Props: [{title: "Props", youtubeUrl: "https://www.youtube.com/watch?v=PHaECbrKgs0", 
+  docUrl: "https://www.freecodecamp.org/news/how-to-use-props-in-react/", 
+  quizUrl: "https://quizgecko.com/create?quiz_id=40441"}],
+
+Hooks: [{ title: "Hooks", youtubeUrl:"https://www.youtube.com/watch?v=K0q-8ytGlVA",
+  docUrl: "https://www.codecademy.com/learn/react-101/modules/react-hooks-u/cheatsheet",
+  quizUrl: "https://quizgecko.com/quiz/master-react-hooks" }]
+}
 
 function App() {
 const [content, setContent] = useState(dummyArray);
