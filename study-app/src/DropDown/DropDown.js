@@ -5,7 +5,7 @@ export default function DropDown(props) {
 
   return (
     <div className="btn-group">
-      <button type="button" className="btn btn-dark dropdown-toggle" data-mdb-toggle="dropdown" aria-expanded="false">
+      <button style = {{backgroundColor:"#9BBEC0", fontSize: "1em", color: "#3D5051"}} type="button" className="btn btn-dark dropdown-toggle" data-mdb-toggle="dropdown" aria-expanded="false">
         {selectedTopic || 'Choose a study topic'}
       </button>
       <ul className="dropdown-menu">
