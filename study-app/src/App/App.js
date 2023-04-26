@@ -3,6 +3,8 @@ import './App.css';
 import List from '../List/List';
 import ListItem from '../ListItem/ListItem';
 import DropDown from '../DropDown/DropDown';
+import Header from '../Header/Header';
+
 
 const dummyData = {
   React: [
@@ -35,6 +37,7 @@ const dummyData = {
 };
 const topics = ['React', 'Components', 'Props', 'Hooks'];
 
+
 function App() {
   const [selectedTopic, setSelectedTopic] = useState('');
   const [content, setContent] = useState(dummyData);
@@ -52,7 +55,8 @@ function App() {
 
   return (
     <div>
-      <h1>CodeCrunch</h1>
+      <Header  />
+      <h1 style={{color:"#3D5051"}}>Revise your code and byte back with confidence!</h1>
       <DropDown topics={topics} selectedTopic={selectedTopic} handleClick={handleClick} />
       <List content={content && content[selectedTopic]} />
     </div>

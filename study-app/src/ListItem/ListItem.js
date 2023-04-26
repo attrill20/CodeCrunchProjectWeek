@@ -5,8 +5,7 @@ function ListItem(props) {
     <div>
     <li> 
       <a href={props.link}>{props.text}</a>
-    </li>
-       
+    </li>  
     </div>
   );
 }
