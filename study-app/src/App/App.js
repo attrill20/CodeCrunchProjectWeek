@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import List from '../List/List';
-import ListItem from '../ListItem/ListItem';
 import DropDown from '../DropDown/DropDown';
 import Header from '../Header/Header';
+import { BrowserRouter, Route,Routes } from 'react-router-dom';
+
+
 
 
 const dummyData = {
@@ -39,7 +41,7 @@ const topics = ['React', 'Components', 'Props', 'Hooks'];
 
 
 function App() {
-  const [selectedTopic, setSelectedTopic] = useState('');
+  const [selectedTopic, setSelectedTopic] = useState(null);
   const [content, setContent] = useState(dummyData);
 
   
@@ -53,15 +55,20 @@ function App() {
 //     setContent(dummyData[selectedTopic]);
 //  console.log(content)}, [selectedTopic]);
 
-  return (
-    <div>
-      <Header  />
-      <h4 style={{color:"#3D5051"}}>Revise your code and byte back with confidence!</h4>
+return (
+  <div>
+    <Header />
+    <h4 style={{color:"#3D5051"}}>Revise your code and byte back with confidence!</h4>
+    <BrowserRouter>
       <DropDown topics={topics} selectedTopic={selectedTopic} handleClick={handleClick} />
-      <List content={content && content[selectedTopic]} />
-    </div>
-  );
+      <Routes>
+        <Route path="/:topic" element={<List content={content[selectedTopic]} />} />
+      </Routes>
+      <List content={content[selectedTopic]} />
+    </BrowserRouter>
+  </div>
+);
 }
 
-export default App;
 
+export default App;

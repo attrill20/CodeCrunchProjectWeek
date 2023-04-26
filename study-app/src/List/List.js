@@ -10,29 +10,23 @@ function List(props) {
   }
 /* import React, {useState} from 'react';
 import YoutubeEmbed from '../YouTube/youtube';
-
 function List(props) {
   console.log(props)
   return (
     <div className="List">
-
       <p> {props.content && props.content[0].title} </p>
       <p> {props.content && props.content[0].docUrl} </p>
       <p> {props.content && props.content[0].youtubeUrl} </p>
-
       <h2>2 Youtube Embed Test</h2>
       <YoutubeEmbed embedId={props.content && props.content[0].youtubeUrl} /> 
-
       <h1>3 Youtube Embed Test</h1>
       <YoutubeEmbed embedId={props.content && props.content[0].youtubeUrl} />
       
       <p> {props.content && props.content[0].quizUrl} </p>
-
        
     </div>
   );
   }
-
 export default List;
 */
   return (
