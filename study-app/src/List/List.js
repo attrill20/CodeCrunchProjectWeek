@@ -10,17 +10,18 @@ function List(props) {
 
   return (
     <>
+    <h2>{props.content[0].title} </h2>
     <ListItem 
       text = "Watch on youtube"
-      link = {props.content.youtubeUrl}
+      link = {props.content[0].youtubeUrl}
     />
       <ListItem 
       text = "Documentation"
-      link = {props.content.docUrl}
+      link = {props.content[0].docUrl}
     />
       <ListItem 
       text = "quiz here"
-      link = {props.content.quizUrl}
+      link = {props.content[0].quizUrl}
     />
       <ListItem 
       text = "other"

@@ -37,22 +37,24 @@ const topics = ['React', 'Components', 'Props', 'Hooks'];
 
 function App() {
   const [selectedTopic, setSelectedTopic] = useState('');
-  const [content, setContent] = useState(dummyData[selectedTopic]);
+  const [content, setContent] = useState(dummyData);
 
-  setSelectedTopic(event.target.innerText);
+  
   function handleClick(event) {
-    console.log(content)
+    setSelectedTopic(event.target.innerText)
+    console.log(selectedTopic)
+    console.log(content[selectedTopic])
   }
 
-  /*useEffect(() => {
-    setContent(dummyData[selectedTopic]);
- console.log (selectedTopic) }, [selectedTopic]);*/
+//   useEffect(() => {
+//     setContent(dummyData[selectedTopic]);
+//  console.log(content)}, [selectedTopic]);
 
   return (
     <div>
       <h1>CodeCrunch</h1>
       <DropDown topics={topics} selectedTopic={selectedTopic} handleClick={handleClick} />
-      <List content={content [selectedTopic]} /
+      <List content={content && content[selectedTopic]} />
     </div>
   );
 }
