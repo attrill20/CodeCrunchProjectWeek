@@ -3,7 +3,7 @@ function ListItem(props) {
 
   return (
     <div>
-    <li> 
+    <li id = {props.id} className="card"> 
       <a href={props.link}>{props.text}</a>
     </li>  
     </div>

@@ -9,32 +9,29 @@ function List(props) {
   }
 
   return (
-    <>
+    <div className = "List">
     <h2>{props.content[0].title} </h2>
     <ListItem 
+      id= "card1"
       text = "Watch on youtube"
       link = {props.content[0].youtubeUrl}
     />
-      <ListItem 
+    <ListItem 
+      id= "card2"
       text = "Documentation"
       link = {props.content[0].docUrl}
     />
-      <ListItem 
+    <ListItem 
+      id= "card3"
       text = "quiz here"
       link = {props.content[0].quizUrl}
     />
       <ListItem 
+      id= "card4"
       text = "other"
       link = {""}
     />
-
-    {/* <div>
-      <h2>{props.content.title}</h2>
-      <p>YouTube URL: {props.content.youtubeUrl}</p>
-      <p>Documentation URL: {props.content.docUrl}</p>
-      <p>Quiz URL: {props.content.quizUrl}</p>
-    </div> */}
-    </>
+    </div>
   );
 }
 
