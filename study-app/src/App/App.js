@@ -3,6 +3,7 @@ import './App.css';
 import List from '../List/List';
 import ListItem from '../ListItem/ListItem';
 import DropDown from '../DropDown/DropDown';
+import Header from '../Header/Header';
 
 
 //PLAN
@@ -51,7 +52,8 @@ function handleClick(event) {
 
   return (
     <div>
-      <h1 style={{color:"#3D5051"}}>Page Title</h1>
+    <Header/>
+      <h1 style={{color:"#3D5051"}}>Revise your code and byte back with confidence!</h1>
       {/* we need to pass a function into this button:  */}
       <DropDown 
         // setSelectedOption = {setSelectedOption}
