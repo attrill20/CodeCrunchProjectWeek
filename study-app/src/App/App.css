@@ -22,10 +22,11 @@
     display:flex;
     justify-content:center;
 }
-/* 
+
 h2 {
-    margin: 50px;
-} */
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
 
 .card {
    padding: 2%;
