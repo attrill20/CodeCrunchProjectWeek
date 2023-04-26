@@ -13,7 +13,7 @@ const dummyData = {
   Components: [
     { 
       title: "React Component Guide", 
-      youtubeUrl: "https://www.youtube.com/watch?v=9vS86xgG3ak&t=12s", 
+      youtubeUrl: "9vS86xgG3ak", 
       docUrl:"https://stackabuse.com/guide-to-react-component/", 
       quizUrl:"https://quizgecko.com/quiz/test-your-react-component-knowledge"
     }
@@ -21,7 +21,7 @@ const dummyData = {
   Props: [
     { 
       title: "Props", 
-      youtubeUrl: "https://www.youtube.com/watch?v=PHaECbrKgs0", 
+      youtubeUrl: "PHaECbrKgs0", 
       docUrl: "https://www.freecodecamp.org/news/how-to-use-props-in-react/", 
       quizUrl: "https://quizgecko.com/create?quiz_id=40441"
     }
@@ -29,7 +29,7 @@ const dummyData = {
   Hooks: [
     { 
       title: "Hooks", 
-      youtubeUrl:"https://www.youtube.com/watch?v=K0q-8ytGlVA",
+      youtubeUrl:"K0q-8ytGlVA",
       docUrl: "https://www.codecademy.com/learn/react-101/modules/react-hooks-u/cheatsheet",
       quizUrl: "https://quizgecko.com/quiz/master-react-hooks"
     }
@@ -56,7 +56,7 @@ function App() {
   return (
     <div>
       <Header  />
-      <h1 style={{color:"#3D5051"}}>Revise your code and byte back with confidence!</h1>
+      <h4 style={{color:"#3D5051"}}>Revise your code and byte back with confidence!</h4>
       <DropDown topics={topics} selectedTopic={selectedTopic} handleClick={handleClick} />
       <List content={content && content[selectedTopic]} />
     </div>
