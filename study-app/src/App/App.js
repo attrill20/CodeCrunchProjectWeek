@@ -18,7 +18,14 @@ import DropDown from '../DropDown/DropDown';
 
 
 const dummyArray = {
-React: [{title: "Master React", youtubeUrl: "link", docUrl: "....", quizUrl: ""}], 
+React: [{title: "Master React", youtubeUrl: "link", docUrl: `//DONE // create working dropdown menu component // test click-off functionality 
+//DONE // write out options of dropdown menu and make sure they display/ are selectable 
+// write dummy data to display to list
+// make function to attach to dropdown so that when an option is selected it displays to list
+// check that dropdown menu displays data to the list 
+// chanage the type of data being displayed so it is similar to our actual data
+// create a function that will take in the data from the dropdown menu and display it to the list`
+, quizUrl: ""}], 
 Components: [{youtubeUrl: "https://www.youtube.com/watch?v=9vS86xgG3ak&t=12s", 
   docUrl:"https://stackabuse.com/guide-to-react-component/", 
   quizUrl:"https://quizgecko.com/quiz/test-your-react-component-knowledge",}], 
@@ -44,7 +51,7 @@ function handleClick(event) {
 
   return (
     <div>
-      <h1>Test</h1>
+      <h1 style={{color:"#3D5051"}}>Page Title</h1>
       {/* we need to pass a function into this button:  */}
       <DropDown 
         // setSelectedOption = {setSelectedOption}
@@ -56,7 +63,7 @@ function handleClick(event) {
       <List 
       content = {content[search]}
       />
-      <ListItem />
+      {/* <ListItem /> */}
     </div>
 
   );
