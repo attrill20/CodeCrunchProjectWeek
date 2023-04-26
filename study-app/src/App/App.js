@@ -53,7 +53,7 @@ function handleClick(event) {
   return (
     <div>
     <Header/>
-      <h1 style={{color:"#3D5051"}}>Revise your code and byte back with confidence!</h1>
+      <h3 style={{color:"#3D5051"}}>Revise your code and byte back with confidence!</h3>
       {/* we need to pass a function into this button:  */}
       <DropDown 
         // setSelectedOption = {setSelectedOption}

@@ -10,6 +10,14 @@
     row-gap: 2%;
     border-radius: 10%
 }
+.header-container{
+    background-color: #9686AC;
+}
+.title {
+    display:flex;
+    justify-content:center;
+    color: white;
+}
 .btn-group {
     display:flex;
     justify-content:center;

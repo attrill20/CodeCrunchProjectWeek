@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="header-container">
       <header>
-        <nav className="navbar navbar-expand-lg navbar-light bg-white">
+        <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container-fluid">
             <button
               className="navbar-toggler"
@@ -17,9 +17,9 @@ const Header = () => {
             >
               <i className="fas fa-bars"></i>
             </button>
-            <div className="d-flex align-items-center me-auto">
+            <div className="d-flex align-items-center ">
               <div className="navbar-brand">
-                <h2>Byte-Sized Revision</h2>
+                <h1 className= "title">Byte-Sized Revision</h1>
               </div>
             </div>
             <div className="collapse navbar-collapse" id="navbarExample01">
@@ -34,7 +34,7 @@ const Header = () => {
                   <a className="nav-link" href="#">Course Overview</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">About</a>
+                  <a className="nav-link" href="#">Help desk</a>
                 </li>
               </ul>
             </div>
