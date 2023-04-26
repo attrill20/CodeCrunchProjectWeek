@@ -1,18 +1,23 @@
-import React, {useState} from 'react';
-import App from '../App/App';
+import React from 'react';
 
 export default function DropDown(props) {
+  const { topics, selectedTopic, handleClick } = props;
+
   return (
-<div className="btn-group">
-  <button style={{backgroundColor: "#9BBEC0"}} type="button" className="btn btn-dark dropdown-toggle" data-mdb-toggle="dropdown" aria-expanded="false">
-    Choose a study topic
-  </button> 
-  <ul className="dropdown-menu">
-    <li onClick={props.handleClick}><a className="dropdown-item" href="#"> React </a></li>
-    <li onClick={props.handleClick}><a className="dropdown-item" href="#">Props</a></li>
-    <li onClick={props.handleClick}><a className="dropdown-item" href="#">Hooks</a></li>
-    <li onClick={props.handleClick}><a className="dropdown-item" href="#">Components</a></li>
-  </ul>
-</div>
-  )
+    <div className="btn-group">
+      <button type="button" className="btn btn-dark dropdown-toggle" data-mdb-toggle="dropdown" aria-expanded="false">
+        {selectedTopic || 'Choose a study topic'}
+      </button>
+      <ul className="dropdown-menu">
+        {topics.map((topic, index) => (
+          <li key={index} onClick={handleClick}>
+            <a className="dropdown-item" href="#">
+              {topic}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+
 }

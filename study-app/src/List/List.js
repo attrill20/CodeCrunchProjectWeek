@@ -1,16 +1,40 @@
-import React, {useState} from 'react';
+import React from 'react';
+import ListItem from '../ListItem/ListItem';
 
 function List(props) {
-  console.log(props)
-  return (
-    <div className="List">
-    <h2 id="topic-title"> Topic: React </h2>
-      <p className="card" id="card1"> {props.content && props.content[0].title} </p>
-      <p className="card" id="card2"> {props.content && props.content[0].docUrl} </p>
-      <p className="card" id="card3"> {props.content && props.content[0].youtubeUrl} </p>
-      <p className="card" id="card4"> {props.content && props.content[0].quizUrl} </p>
+  // const { item } = props;
 
-    </div>
+  if (!props.content) {
+    return null;
+  }
+
+  return (
+    <>
+    <h2>{props.content[0].title} </h2>
+    <ListItem 
+      text = "Watch on youtube"
+      link = {props.content[0].youtubeUrl}
+    />
+      <ListItem 
+      text = "Documentation"
+      link = {props.content[0].docUrl}
+    />
+      <ListItem 
+      text = "quiz here"
+      link = {props.content[0].quizUrl}
+    />
+      <ListItem 
+      text = "other"
+      link = {""}
+    />
+
+    {/* <div>
+      <h2>{props.content.title}</h2>
+      <p>YouTube URL: {props.content.youtubeUrl}</p>
+      <p>Documentation URL: {props.content.docUrl}</p>
+      <p>Quiz URL: {props.content.quizUrl}</p>
+    </div> */}
+    </>
   );
 }
 
