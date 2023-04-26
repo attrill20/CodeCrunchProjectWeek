@@ -36,7 +36,7 @@ const dummyData = {
 const topics = ['React', 'Components', 'Props', 'Hooks'];
 
 function App() {
-  const [selectedTopic, setSelectedTopic] = useState('React');
+  const [selectedTopic, setSelectedTopic] = useState('');
   const [content, setContent] = useState(dummyData[selectedTopic]);
 
   function handleClick(event) {
@@ -52,7 +52,6 @@ function App() {
       <h1>CodeCrunch</h1>
       <DropDown topics={topics} selectedTopic={selectedTopic} handleClick={handleClick} />
       <List content={content} />
-      <ListItem />
     </div>
   );
 }

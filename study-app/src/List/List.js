@@ -1,20 +1,40 @@
 import React from 'react';
+import ListItem from '../ListItem/ListItem';
 
-function ListItem(props) {
-  const { item } = props;
+function List(props) {
+  // const { item } = props;
 
-  if (!item) {
+  if (!props.content) {
     return null;
   }
 
   return (
-    <div>
-      <h2>{item.title}</h2>
-      <p>YouTube URL: {item.youtubeUrl}</p>
-      <p>Documentation URL: {item.docUrl}</p>
-      <p>Quiz URL: {item.quizUrl}</p>
-    </div>
+    <>
+    <ListItem 
+      text = "Watch on youtube"
+      link = {props.content.youtubeUrl}
+    />
+      <ListItem 
+      text = "Documentation"
+      link = {props.content.docUrl}
+    />
+      <ListItem 
+      text = "quiz here"
+      link = {props.content.quizUrl}
+    />
+      <ListItem 
+      text = "other"
+      link = {""}
+    />
+
+    {/* <div>
+      <h2>{props.content.title}</h2>
+      <p>YouTube URL: {props.content.youtubeUrl}</p>
+      <p>Documentation URL: {props.content.docUrl}</p>
+      <p>Quiz URL: {props.content.quizUrl}</p>
+    </div> */}
+    </>
   );
 }
 
-export default ListItem;
+export default List;
