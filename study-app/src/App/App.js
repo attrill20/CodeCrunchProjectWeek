@@ -34,7 +34,7 @@ const dummyData = {
       title: "Props", 
       youtubeUrl: "PHaECbrKgs0", 
       docUrl: `click <a href="https://www.freecodecamp.org/news/how-to-use-props-in-react/">here</a> for the docs`, 
-      quizUrl: `click <a href="https://quizgecko.com/create?quiz_id=40441">here</a>for the quiz` ,
+      quizUrl: `click <a href="https://quizgecko.com/create?quiz_id=40441">here</a> for the quiz` ,
       textContent: `<p>React Components Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.</p>
       <p>Introduction</p>
       <p>A component is the probably most important concept to understand in React. It is one of the core building blocks of React that allows us to split a UI into independent, reusable pieces, making the task of building UIs much easier. All of these independent components are then combined into a parent component, which will serve as our final user interface.</p>

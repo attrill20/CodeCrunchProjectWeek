@@ -1,3 +1,5 @@
+import TimeButton from "../TimeButton/TimeButton.js";
+
 function ListItem(props) {
   return (
     <li id={props.id} className="card"> 
@@ -5,6 +7,9 @@ function ListItem(props) {
       {props.dangerouslySetInnerHTML && (
         <p dangerouslySetInnerHTML={{ __html: props.dangerouslySetInnerHTML.__html }} />
       )}
+      <TimeButton 
+        // props = {props}
+      />
     </li>  
   );
 }

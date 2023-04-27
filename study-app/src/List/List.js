@@ -18,11 +18,13 @@ function List(props) {
     <ListItem 
       id= "card2"
       text = "Documentation"
+      // time = "10"
       dangerouslySetInnerHTML = {{ __html: props.content[0].docUrl}}
     />
     <ListItem 
       id= "card3"
       text = "Quiz"
+      // time ="5"
       dangerouslySetInnerHTML = {{ __html: props.content[0].quizUrl}}
     />
       <ListItem 

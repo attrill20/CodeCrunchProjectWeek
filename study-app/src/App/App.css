@@ -26,6 +26,17 @@
     justify-content:left;
 }
 
+.timebutton {
+position:absolute;
+right: 5px;
+bottom: 5px;
+background-color:#9686AC ;
+color: white;
+border-radius: 50%;
+font-size: 0.6em;
+padding: 1.75%;
+
+}
 h2 {
     grid-column-start: 1;
     grid-column-end: 3;
