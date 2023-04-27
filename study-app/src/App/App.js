@@ -17,15 +17,19 @@ const dummyData = {
     { 
       title: "React Component Guide", 
       youtubeUrl: "9vS86xgG3ak", 
-      docUrl:`Click <a href="https://stackabuse.com/guide-to-react-component/">here</a> for the docs`, 
-      quizUrl:`Click <a href="https://quizgecko.com/quiz/test-your-react-component-knowledge">here</a> for the quiz`,
+      docUrl:`<p>One of the best ways to fully understand the specifics of components is to fully read the official docs from React.</p>
+      <p>Click <a href="https://react.dev/learn/your-first-component" target="_blank">here</a> for the Docs!</p>
+      <p>Make sure to try out the Challenges at the bottom of the page too and put your newly found skills into practice.</p>`,
+      quizUrl:`<p>Once you feel like you have leared the basics of this section, testing your knowledge with a quiz is a great way of checking your progress.</p>
+      <p>Click <a href="https://quizgecko.com/quiz/test-your-react-component-knowledge" target="_blank">here</a> for the quiz!</p>
+      <p>These results will be tracked on your My Progress page - best of luck!</p>`,
       textContent: `<p>React Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.</p>
       <p><strong>Introduction</strong></p>
       <p>A component is the probably most important concept to understand in React. It is one of the core building blocks of React that allows us to split a UI into independent, reusable pieces, making the task of building UIs much easier. All of these independent components are then combined into a parent component, which will serve as our final user interface.</p>
       <p>In this guide, we will take a look at components and how they work in React, we will also see how to pass data from one component to another using props.</p> 
       <p><strong>What Is a Component?</strong></p>
       <p>A component is a self-contained, reusable code block that divides the user interface into smaller pieces rather than building the entire UI in a single file. Buttons, forms, dialog, and so on can all be expressed as components. React components accept arbitrary inputs ("props") and return React elements or JSX code that tells what should be rendered on the screen.</p>
-      <p>To demonstrate how components work...
+      <p>To learn more about components, click <a href="https://www.w3schools.com/react/react_components.asp" target="_blank">here</a>.
       </p>`
     }
   ], 
