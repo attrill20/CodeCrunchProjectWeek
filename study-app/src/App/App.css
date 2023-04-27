@@ -22,8 +22,16 @@ body {
   background-color: #9686ac;
 }
 
+.title {
+    font-size: 3em;
+    /* font-weight: bold; */
+    font-family: "Anton", cursive;
+}
+
 .nav-link {
   color: white;
+  font-size: 1.3em;
+  margin-right: 10px;
 }
 
 .title {
