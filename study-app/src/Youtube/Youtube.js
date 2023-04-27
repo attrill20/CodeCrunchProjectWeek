@@ -7,6 +7,8 @@ const YoutubeEmbed = (props) => {
 console.log("Youtube embed", props)
 return (
   <div className="video-responsive card" id = "card1">
+
+    <p>YouTube Video</p>
   
   <iframe
     width="853"

@@ -1,12 +1,12 @@
 function ListItem(props) {
-  // const {youtubeUrl, docUrl, quizUrl } = props.item;
-
   return (
-    <div>
-    <li id = {props.id} className="card"> 
+    <li id={props.id} className="card"> 
       <a href={props.link}>{props.text}</a>
+      {props.dangerouslySetInnerHTML && (
+        <p dangerouslySetInnerHTML={{ __html: props.dangerouslySetInnerHTML.__html }} />
+      )}
     </li>  
-    </div>
   );
 }
+
 export default ListItem;
