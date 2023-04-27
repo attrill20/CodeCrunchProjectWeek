@@ -3,6 +3,7 @@ import './App.css';
 import List from '../List/List';
 import DropDown from '../DropDown/DropDown';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import ProgressPage from '../ProgressPage/ProgressPage';
 
@@ -88,6 +89,7 @@ return (
         <Route path="/:topic" element={<List content={content[selectedTopic]} />} />
       </Routes>
     </HashRouter>
+    <Footer />
   </div>
 );
 }
