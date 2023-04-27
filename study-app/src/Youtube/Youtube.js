@@ -9,7 +9,7 @@ console.log("Youtube embed", props)
 return (
   <div className="video-responsive card" id = "card4">
 
-    <p>YouTube Video</p>
+    <h4 style={{ fontWeight: 'bold', textAlign: 'left' }}>YouTube Video</h4>
   
   <iframe
     width="853"
