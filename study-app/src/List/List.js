@@ -13,7 +13,7 @@ function List(props) {
     <div className = "List">
     <h2>{props.content[0].title} </h2>
     <YoutubeEmbed embedId={props.content && props.content[0].youtubeUrl} 
-      id= "card1"
+      id= "card4"
       
     />
     <ListItem 
@@ -27,7 +27,7 @@ function List(props) {
       link = {props.content[0].quizUrl}
     />
       <ListItem 
-      id= "card4"
+      id= "card1"
       cardTitle = "Test Title"
       text = {null}
       dangerouslySetInnerHTML = {{ __html: props.content[0].textContent }}
