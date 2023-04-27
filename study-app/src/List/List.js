@@ -8,7 +8,6 @@ function List(props) {
   if (!props.content) {
     return null;
   }
-
   return (
     <div className = "List">
     <h2>{props.content[0].title} </h2>
