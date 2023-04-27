@@ -3,7 +3,7 @@ import './App.css';
 import List from '../List/List';
 import DropDown from '../DropDown/DropDown';
 import Header from '../Header/Header';
-import { HashRouter, Route,Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import ProgressPage from '../ProgressPage/ProgressPage';
 
 
@@ -16,8 +16,8 @@ const dummyData = {
     { 
       title: "React Component Guide", 
       youtubeUrl: "9vS86xgG3ak", 
-      docUrl:"https://stackabuse.com/guide-to-react-component/", 
-      quizUrl:"https://quizgecko.com/quiz/test-your-react-component-knowledge",
+      docUrl:`click <a href="https://stackabuse.com/guide-to-react-component/">here</a> for the docs`, 
+      quizUrl:`click <a href="https://quizgecko.com/quiz/test-your-react-component-knowledge">here</a> for the quiz`,
       textContent: `<p>React Components Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.</p>
       <p>Introduction</p>
       <p>A component is the probably most important concept to understand in React. It is one of the core building blocks of React that allows us to split a UI into independent, reusable pieces, making the task of building UIs much easier. All of these independent components are then combined into a parent component, which will serve as our final user interface.</p>
@@ -32,8 +32,8 @@ const dummyData = {
     { 
       title: "Props", 
       youtubeUrl: "PHaECbrKgs0", 
-      docUrl: "https://www.freecodecamp.org/news/how-to-use-props-in-react/", 
-      quizUrl: "https://quizgecko.com/create?quiz_id=40441",
+      docUrl: `click <a href="https://www.freecodecamp.org/news/how-to-use-props-in-react/">here</a> for the docs`, 
+      quizUrl: `click <a href="https://quizgecko.com/create?quiz_id=40441">here</a>for the quiz` ,
       textContent: `<p>React Components Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.</p>
       <p>Introduction</p>
       <p>A component is the probably most important concept to understand in React. It is one of the core building blocks of React that allows us to split a UI into independent, reusable pieces, making the task of building UIs much easier. All of these independent components are then combined into a parent component, which will serve as our final user interface.</p>
@@ -48,8 +48,8 @@ const dummyData = {
     { 
       title: "Hooks", 
       youtubeUrl:"K0q-8ytGlVA",
-      docUrl: "https://www.codecademy.com/learn/react-101/modules/react-hooks-u/cheatsheet",
-      quizUrl: "https://quizgecko.com/quiz/master-react-hooks",
+      docUrl: `click <a href="https://www.codecademy.com/learn/react-101/modules/react-hooks-u/cheatsheet">here</a> for the docs`,
+      quizUrl: `click <a href="https://quizgecko.com/quiz/master-react-hooks">here</a> for the quiz` ,
       textContent: `<p>React Components Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.</p>
       <p>Introduction</p>
       <p>A component is the probably most important concept to understand in React. It is one of the core building blocks of React that allows us to split a UI into independent, reusable pieces, making the task of building UIs much easier. All of these independent components are then combined into a parent component, which will serve as our final user interface.</p>
@@ -76,10 +76,6 @@ function App() {
     console.log(content[selectedTopic])
   }
 
-//   useEffect(() => {
-//     setContent(dummyData[selectedTopic]);
-//  console.log(content)}, [selectedTopic]);
-
 return (
   <div>
     <Header />
@@ -87,8 +83,8 @@ return (
     <HashRouter>
       <DropDown topics={topics} selectedTopic={selectedTopic} handleClick={handleClick} />
       <Routes>
-      <Route path="/" element={<List content={content[selectedTopic]} />} /> 
-        <Route path="/<Route path="/" element={<Home />} />progress" element={<ProgressPage />} />
+        <Route path="/" element={<List content={content[selectedTopic]} />} /> 
+        <Route path="/progress" element={<ProgressPage />} />
         <Route path="/:topic" element={<List content={content[selectedTopic]} />} />
       </Routes>
     </HashRouter>
