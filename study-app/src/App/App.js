@@ -83,8 +83,7 @@ return (
     <h4 style={{color:"#3D5051"}}></h4>
     
       <DropDown topics={topics} selectedTopic={selectedTopic} handleClick={handleClick} />
-      <div
-          className="image"
+      <div className="image"
           style={{ display: "flex", justifyContent: "center", padding: "2%" }}
         >
           <img
@@ -94,6 +93,7 @@ return (
               height: "50%",
               width: "50%",
             }} />
+            </div>
       <HashRouter>
         <Routes>
         <Route path="/" element={<List content={content[selectedTopic]} />} /> 
