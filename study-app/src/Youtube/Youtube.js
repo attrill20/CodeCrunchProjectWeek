@@ -2,6 +2,7 @@ import React from "react";
 //import PropTypes from "prop-types"; This was a suggestion from the template
 import "./Styles.css";
 // import List from '../List/List';
+import Timebutton from "../TimeButton/TimeButton";
 
 const YoutubeEmbed = (props) => {
 console.log("Youtube embed", props)
@@ -19,6 +20,8 @@ return (
     allowFullScreen
     title="Embedded youtube"
   />
+
+  <Timebutton />
 </div>
 );
 }

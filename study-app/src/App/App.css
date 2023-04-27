@@ -53,13 +53,15 @@ body {
 
 .timebutton {
   position: absolute;
-  right: 5px;
-  bottom: 5px;
+  right: 1.5%;
+  bottom: 2%;
   background-color: #9686ac;
   color: white;
   border-radius: 50%;
-  font-size: 0.6em;
-  padding: 1.75%;
+  font-size: 0.75em;
+  padding: 1.5%;
+  padding-top: 2.25%;
+  padding-bottom: 2.25%;
 }
 
 h2 {
