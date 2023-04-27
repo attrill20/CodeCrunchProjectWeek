@@ -81,9 +81,21 @@ return (
   <div>
     <Header />
     <h4 style={{color:"#3D5051"}}></h4>
-    <HashRouter>
+    
       <DropDown topics={topics} selectedTopic={selectedTopic} handleClick={handleClick} />
-      <Routes>
+      <div
+          className="image"
+          style={{ display: "flex", justifyContent: "center", padding: "2%" }}
+        >
+          <img
+            src={require("./Images/image2.jpg")}
+            alt="study"
+            style={{
+              height: "50%",
+              width: "50%",
+            }} />
+      <HashRouter>
+        <Routes>
         <Route path="/" element={<List content={content[selectedTopic]} />} /> 
         <Route path="/progress" element={<ProgressPage />} />
         <Route path="/:topic" element={<List content={content[selectedTopic]} />} />
