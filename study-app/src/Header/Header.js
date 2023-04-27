@@ -19,7 +19,7 @@ const Header = () => {
             </button>
             <div className="d-flex align-items-center ">
               <div className="navbar-brand">
-              <img src={require("./file.png")} alt="logo" style ={{"margin-right": "2%", "height": "15%", "width":"15%"}}/>
+              <img src={require("./file.png")} alt="logo" style ={{"margin-right": "2%", "height": "10%", "width":"10%"}}/>
                 <h1 className= "title">CODE CRUNCH</h1>
               </div>
             </div>
