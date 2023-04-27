@@ -19,7 +19,8 @@ const Header = () => {
             </button>
             <div className="d-flex align-items-center ">
               <div className="navbar-brand">
-                <h1 className= "title">Code Crunch</h1>
+              <img src={require("./file.png")} alt="logo" style ={{"margin-right": "2%", "height": "15%", "width":"15%"}}/>
+                <h1 className= "title">CODE CRUNCH</h1>
               </div>
             </div>
             <div className="collapse navbar-collapse" id="navbarExample01">

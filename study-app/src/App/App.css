@@ -1,3 +1,8 @@
+body {
+    font-family: 'Mulish', serif;
+  }
+  /* "Segoe UI" */
+
 .List {
     background-color: #C6C9E7;
     display: grid;
