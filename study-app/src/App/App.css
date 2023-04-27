@@ -16,6 +16,11 @@
 .header-container{
     background-color: #9686AC;
 }
+
+.nav-link {
+    color: white;
+}
+
 .title {
     display:flex;
     justify-content:center;

@@ -29,8 +29,7 @@ function List(props) {
     />
       <ListItem 
       id= "card1"
-      cardTitle = "Test Title"
-      text = {null}
+      text = "Introduction"
       dangerouslySetInnerHTML = {{ __html: props.content[0].textContent }}
       link = {null}
     />

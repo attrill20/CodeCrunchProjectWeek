@@ -19,7 +19,7 @@ const Header = () => {
             </button>
             <div className="d-flex align-items-center ">
               <div className="navbar-brand">
-                <h1 className= "title">Byte-Sized Revision</h1>
+                <h1 className= "title">Code Crunch</h1>
               </div>
             </div>
             <div className="collapse navbar-collapse" id="navbarExample01">

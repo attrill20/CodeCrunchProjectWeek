@@ -19,7 +19,7 @@ const dummyData = {
       youtubeUrl: "9vS86xgG3ak", 
       docUrl:`click <a href="https://stackabuse.com/guide-to-react-component/">here</a> for the docs`, 
       quizUrl:`click <a href="https://quizgecko.com/quiz/test-your-react-component-knowledge">here</a> for the quiz`,
-      textContent: `<p>React Components Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.</p>
+      textContent: `<p>React Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.</p>
       <p>Introduction</p>
       <p>A component is the probably most important concept to understand in React. It is one of the core building blocks of React that allows us to split a UI into independent, reusable pieces, making the task of building UIs much easier. All of these independent components are then combined into a parent component, which will serve as our final user interface.</p>
       <p>In this guide, we will take a look at components and how they work in React, we will also see how to pass data from one component to another using props.</p> 
@@ -80,7 +80,7 @@ function App() {
 return (
   <div>
     <Header />
-    <h4 style={{color:"#3D5051"}}>Revise your code and byte back with confidence!</h4>
+    <h4 style={{color:"#3D5051"}}></h4>
     <HashRouter>
       <DropDown topics={topics} selectedTopic={selectedTopic} handleClick={handleClick} />
       <Routes>
