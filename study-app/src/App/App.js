@@ -3,8 +3,8 @@ import './App.css';
 import List from '../List/List';
 import DropDown from '../DropDown/DropDown';
 import Header from '../Header/Header';
-import { BrowserRouter, Route,Routes } from 'react-router-dom';
-
+import { HashRouter, Route,Routes } from 'react-router-dom';
+import ProgressPage from '../ProgressPage/ProgressPage';
 
 
 
@@ -59,16 +59,16 @@ return (
   <div>
     <Header />
     <h4 style={{color:"#3D5051"}}>Revise your code and byte back with confidence!</h4>
-    <BrowserRouter>
+    <HashRouter>
       <DropDown topics={topics} selectedTopic={selectedTopic} handleClick={handleClick} />
       <Routes>
+      <Route path="/" element={<List content={content[selectedTopic]} />} /> 
+        <Route path="/<Route path="/" element={<Home />} />progress" element={<ProgressPage />} />
         <Route path="/:topic" element={<List content={content[selectedTopic]} />} />
       </Routes>
-      <List content={content[selectedTopic]} />
-    </BrowserRouter>
+    </HashRouter>
   </div>
 );
 }
-
 
 export default App;
