@@ -26,9 +26,16 @@
     justify-content:center;
     color: white;
 }
+
 .btn-group {
     display:flex;
-    justify-content:left;
+    justify-content:center;
+}
+
+.dropdown-menu {
+    font-size: 1.5em;
+    min-width: 100%;
+    text-align: center;
 }
 
 .timebutton {
@@ -40,8 +47,8 @@ color: white;
 border-radius: 50%;
 font-size: 0.6em;
 padding: 1.75%;
-
 }
+
 h2 {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -53,6 +60,7 @@ h4 {
     padding:0.75%;
     color: #3D5051
 }
+
 .card {
    padding: 2%;
    width: 100%;
@@ -60,28 +68,29 @@ h4 {
    background-color: #F5F5F5;
    border-radius: 1.5%;
 }
-#card1{
+
+#card1 {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 2;
     grid-row-end: 4;
 }
 
-#card2{
+#card2 {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 4;
     grid-row-end: 5;
 }
 
-#card3{
+#card3 {
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
 }
 
-#card4{
+#card4 {
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 3;
