@@ -4,9 +4,9 @@ import List from "../List/List";
 import DropDown from "../DropDown/DropDown";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import { HashRouter, Route, Routes } from "react-router-dom";
+import {Route, Routes,useLocation } from "react-router-dom";
 import ProgressPage from "../ProgressPage/ProgressPage";
-
+import CourseOverview from "../CourseOverview/CourseOverview";
 const dummyData = {
   React: [
     {
@@ -92,34 +92,25 @@ function App() {
     console.log(content[selectedTopic]);
   }
 
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
   return (
     <div>
       <Header />
-      <h4 style={{ color: "#3D5051" }}></h4>
-      <HashRouter>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <div>
-                <DropDown
-                  topics={topics}
-                  selectedTopic={selectedTopic}
-                  handleClick={handleClick}
-                />
-                <List content={content[selectedTopic]} />
-              </div>
-            }
-          />
-          <Route path="/progress" element={<ProgressPage />} />
-          <Route
-            path="/:topic"
-            element={<List content={content[selectedTopic]} />}
-          />
-        </Routes>
-      </HashRouter>
-      <div
-        className="image"
+      <h4 style={{ "color": "#3D5051" }}></h4>
+      <Routes>
+        <Route path="/" element={
+          <div>
+            <DropDown topics={topics} selectedTopic={selectedTopic} handleClick={handleClick} />
+            <List content={content[selectedTopic]} />
+          </div>
+        } />
+        <Route path="/progress" element={<ProgressPage />} />
+        <Route path="/course-overview" element={<CourseOverview />}/>
+        <Route path="/:topic" element={<List content={content[selectedTopic]} />} />
+      </Routes>
+      {isHomePage && !selectedTopic ? (
+      <div className="image"
         style={{ display: "flex", justifyContent: "center", padding: "2%" }}
       >
         <img
@@ -131,8 +122,10 @@ function App() {
           }}
         />
       </div>
+) : null}
+     
       <Footer />
     </div>
   );
-}
-export default App;
+          }
+          export default App															

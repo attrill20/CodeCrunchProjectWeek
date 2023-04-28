@@ -14,15 +14,14 @@ function ProgressPage() {
   const progress = 75;
   return (
     <div className="ProgressPage">
-      <h1>My Progress</h1>
+  <h1>My Progress</h1>
       <ProgressBar now={progress} label={`${progress}%`} />
-      <h4>Quiz Scores:</h4>
+      <h3 className= 'quiz-scores'>Quiz Scores:</h3>
       <ul>
         {mockUserProgress.quizzes.map((quiz) => (
           <li key={quiz.id}>
             {`Quiz ${quiz.id} - ${quiz.score}% - Topic: ${quiz.topic}`}
             <br />
-            Topic: {quiz.topic}
             <br />
             {mockUserProgress.completedTopics.includes(quiz.topic) ? (
               <span>Completed</span>
@@ -32,8 +31,10 @@ function ProgressPage() {
           </li>
         ))}
       </ul>
-      <Link to="/">Go Back</Link>
+      <Link to="/" className="go-back">Go Back</Link>
     </div>
   );
 }
 export default ProgressPage;
+
+

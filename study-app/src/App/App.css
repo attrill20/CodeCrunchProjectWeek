@@ -118,7 +118,8 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 10px;
+  padding-left: 90px;
 }
 .ProgressPage h1 {
   margin-bottom: 20px;
@@ -132,6 +133,7 @@ h4 {
 .progress {
   height: 30px;
   width: 70%;
+  margin: 30px;
 }
 .progress-bar {
   font-size: 16px;
@@ -141,4 +143,47 @@ h4 {
   width: 100%;
   text-align: center;
   justify-content: center;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-left: -70px;
+
+}
+.go-back {
+  display: block;
+  text-align: center;
+  margin-left: -150px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.CourseOverview {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px;
+  text-align: center;
+  justify-content: center;
+}
+
+.CourseOverview h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.CourseOverview ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.CourseOverview li {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.CourseOverview li strong {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
